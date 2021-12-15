@@ -1,13 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Supermercado+One');
 
 /* Use the 'Lato' font family at 18px throughout the body of the document, and cover the background with the 'map-bg.jpg' image. */
-nav {font-family: sans-serif; font-size: 10px;}
+body {
+   background-image: url("img/map-bg.jpg");
+   font-size: 18px;
+}
 
-#main {width: 900px; margin: 10px auto;}
+
+
+nav {
+  
+    font-size: 18px;
+   }
+
+#main {
+   font-family: 'Lato', sans-serif;
+   width: 900px; margin: 45px auto;}
 /* Use the 'Supermercado One' font at 45px (colored #5d4037) for the restaurant name. */
 
 /*Set the menu to flexible ( the display flex) and use justify-content to define the space between columns */
 #menu {
+   display:flex ;
+   flex-direction: row;
+   justify-content: space-between;
 
 }
 
@@ -22,19 +37,50 @@ nav {font-family: sans-serif; font-size: 10px;}
 }
 section {margin-bottom: 50px;}
 
+h1 {
+   color: #5d4037;
+   font-family: 'Supermercado One', cursive;
+}
+
 /* Show each of the section headings of the menu (e.g. "Starters") in small caps, colored #6d4c41. */
-h2 {margin: 0;}
+h2 {margin: 0;
+   font-family: 'Lato', sans-serif;
+   color: #6d4c41;
+}
 
 /* Make the name of each menu item appear in bold in a 20px size. */
 
+dl {
+   font-family: 'Lato', sans-serif;
+}
 
+dt {
+   font-family: 'Lato', sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+   font-variant: small-caps;
+}
 
-dd {margin: 0 0 12px 0; display: flex;}
+dd {
+   font-family: 'Lato', sans-serif;
+   margin: 0 0 12px 0; display: flex;}
 
 .details {order: 1;}
 
+.left {
+   border-right: 2px rosybrown dashed;
+   padding-right: 50px;
+}
+
+.right {
+   padding-left: 50px;
+}
 /* Show the price of each item in a large font, in the color named 'firebrick' */
-.price {order: 2; padding-left: 10px;}
+.price {order: 2; padding-left: 10px;
+   color: firebrick;
+}
 
 /* Draw a 2px dashed rosybrown border around the address/footer */
-address {padding: 10px;}
+address {padding: 10px;
+   border: 2px dashed rosybrown;
+  

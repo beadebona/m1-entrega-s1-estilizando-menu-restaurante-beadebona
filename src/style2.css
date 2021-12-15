@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
 
 /* Use the 'Oswald' font family at 14px throughout the body of the document. */
 nav {font-family: sans-serif; font-size: 10px;}
@@ -9,8 +10,17 @@ nav {font-family: sans-serif; font-size: 10px;}
 
 /*Set the menu to flexible ( the display flex) and use justify-content to define the space between columns */
 #menu {
-
+   display: flex;
+   flex-direction: row;   
+   justify-content: space-between;
+   font-family: 'oswald',sans-serif;
+   font-size: 14px;
 }
+h1 {
+   font-family: 'Bungee Inline', cursive;
+   font-size: 46px;
+}
+
 /*Set a column width*/
 .menu-side {
    width: 420px;
@@ -18,16 +28,37 @@ nav {font-family: sans-serif; font-size: 10px;}
 section {margin-bottom: 20px; padding: 10px;}
 
 /* Show each of the section headings of the menu (e.g. "Starters") in uppercase. */
-h2 {margin-top: 0;}
+h2 {margin-top: 0;
+   text-transform: uppercase;
+}
 
 /* Make the name of each menu item appear in bold in a 16px size. */
-dt {display: inline;}
+dt {display: inline;
+   font-weight: bold;
+   font-size: 16px;
+}
+
+dt::after {
+   content: ",";
+}
 /* Make a comma appear after the name of each menu item (before the description) */
 
 dd {display: inline; margin: 0;}
 dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
 
 .price {float: right; padding: 0 0 35px 20px;}
+
+#starters {
+   border: 2px solid black;
+}
+
+#desserts {
+   border: 2px solid black;
+}
+address {
+   text-align: right;
+   font-family: 'oswald',sans-serif;
+}
 
 /* Right-align the text of the address/footer */
 
